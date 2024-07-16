@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
@@ -81,5 +81,22 @@ return {
         Rule("a", "a", "-vim")
       )
     end,
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+    event = "BufEnter *.hs",
+  },
+  {
+    "tpope/vim-fugitive",
+    name = "fugitive",
+    opts = {},
+    config = function() end,
+    event = "BufEnter *",
   },
 }

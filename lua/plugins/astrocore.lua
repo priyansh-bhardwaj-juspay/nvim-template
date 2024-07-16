@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -32,6 +32,9 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        tabstop = 2,
+        shiftwidth = 2,
+        expandtab = true,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -58,6 +61,10 @@ return {
             )
           end,
           desc = "Close buffer from tabline",
+        },
+        ["<leader>cpp"] = {
+          '<cmd>!g++ -std=c++17 "/Users/priyanshbhardwaj/Documents/cpp/app.cpp" -o "/Users/priyanshbhardwaj/Documents/cpp/app" && cat "/Users/priyanshbhardwaj/Documents/cpp/input.txt" | "/Users/priyanshbhardwaj/Documents/cpp/app" > "/Users/priyanshbhardwaj/Documents/cpp/output.txt"<cr>',
+          desc = "Run C++ file",
         },
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
