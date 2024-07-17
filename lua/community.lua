@@ -13,5 +13,4 @@ return {
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.utility.neodim" },
-  { import = "astrocommunity.pack.rust" },
 }
