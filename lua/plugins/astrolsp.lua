@@ -23,15 +23,10 @@ return {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
+          "cpp",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
-          "python",
-          "rust",
-          "haskell",
-          "typescript",
-          "html",
-          "lua",
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
