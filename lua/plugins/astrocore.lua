@@ -40,6 +40,21 @@ return {
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
+        jukit_shell_cmd = '.env/bin/python',
+        jukit_terminal = 'tmux',
+        jukit_inline_plotting = false,
+        jukit_layout = {
+          split = "horizontal",
+          p1 = 0.6,
+          val = {
+            "file_content",
+            {
+              split = "vetical",
+              p1 = 0.6,
+              val = {"output", "output_history"},
+            }
+          },
+        },
       },
     },
     -- Mappings can be configured through AstroCore as well.

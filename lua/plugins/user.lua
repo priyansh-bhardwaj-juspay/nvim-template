@@ -93,6 +93,13 @@ return {
     event = "BufEnter *.hs",
   },
   {
+    "luk400/vim-jukit",
+    name = "vim-jukit",
+    opts = {},
+    config = function() end,
+    event = "BufEnter *.ipynb",
+  },
+  {
     "tpope/vim-fugitive",
     name = "fugitive",
     opts = {},
