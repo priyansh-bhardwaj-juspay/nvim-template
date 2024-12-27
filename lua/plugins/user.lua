@@ -106,4 +106,8 @@ return {
     config = function() end,
     event = "BufEnter *",
   },
+  {
+    "whatyouhide/vim-gotham",
+    name = "vim-gotham",
+  },
 }
