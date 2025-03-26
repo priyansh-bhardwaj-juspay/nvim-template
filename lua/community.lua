@@ -12,5 +12,7 @@ return {
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
+  { import = "astrocommunity.colorscheme.modus-nvim" },
+  { import = "astrocommunity.colorscheme.night-owl-nvim" },
   { import = "astrocommunity.utility.neodim" },
 }
